@@ -1,20 +1,19 @@
-import { Logo } from './logo'
+import Router from 'preact-router';
+
+import { HomePage } from './home/home-page';
+import { AboutPage } from './about/about-page';
+import { ContactPage } from './contact/contact-page';
+import { Header } from './header';
 
 export function App() {
   return (
     <>
-      <Logo />
-      <p>Hello Vite + Preact!</p>
-      <p class="font-bold underline">
-        <a
-          class="link"
-          href="https://preactjs.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Preact
-        </a>
-      </p>
+      <Header />
+      <Router>
+        <HomePage path="/" />
+        <AboutPage path="/about" />
+        <ContactPage path="/contact" />
+      </Router>
     </>
   )
 }
