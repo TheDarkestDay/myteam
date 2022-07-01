@@ -11,9 +11,16 @@ module.exports = {
     colors: {
       white: "#ffffff",
       primaryDark: "#014e56",
-      primaryLight: "#f67e7e"
+      primaryLight: "#f67e7e",
+      secondaryDarkText: "#002529",
+      secondaryBlue: "#79c8c7",
     },
-    extend: {},
+    extend: {
+      padding: {
+        frameY: "8vw",
+        frameX: "4vw",
+      }
+    },
   },
   plugins: [],
 }
