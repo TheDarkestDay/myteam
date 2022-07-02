@@ -14,6 +14,7 @@ module.exports = {
       primaryLight: "#f67e7e",
       secondaryDarkText: "#002529",
       secondaryBlue: "#79c8c7",
+      secondaryDarkDecoration: "#012f34",
     },
     extend: {
       padding: {
