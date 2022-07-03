@@ -4,6 +4,7 @@ import { HomePage } from './home/home-page';
 import { AboutPage } from './about/about-page';
 import { ContactPage } from './contact/contact-page';
 import { Header } from './header';
+import { Footer } from './footer';
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
         <AboutPage path="/about" />
         <ContactPage path="/contact" />
       </Router>
+      <Footer />
     </>
   )
 }
