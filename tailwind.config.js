@@ -15,11 +15,17 @@ module.exports = {
       secondaryDarkText: "#002529",
       secondaryBlue: "#79c8c7",
       secondaryDarkDecoration: "#012f34",
+      secondaryDarkBlue: "#2c6269",
     },
     extend: {
       padding: {
         frameY: "8vw",
         frameX: "4vw",
+      },
+      backgroundImage: {
+        'icon-people': "url('/src/assets/icon-people.svg')",
+        'icon-process': "url('/src/assets/icon-process.svg')",
+        'icon-analytics': "url('/src/assets/icon-analytics.svg')",
       }
     },
   },
