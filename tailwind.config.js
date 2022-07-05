@@ -16,6 +16,7 @@ module.exports = {
       secondaryBlue: "#79c8c7",
       secondaryDarkDecoration: "#012f34",
       secondaryDarkBlue: "#2c6269",
+      secondaryDeepGreen: "#004047",
     },
     extend: {
       padding: {
@@ -26,6 +27,7 @@ module.exports = {
         'icon-people': "url('/src/assets/icon-people.svg')",
         'icon-process': "url('/src/assets/icon-process.svg')",
         'icon-analytics': "url('/src/assets/icon-analytics.svg')",
+        'icon-tick': "url('/src/assets/icon-tick.svg')",
       }
     },
   },
