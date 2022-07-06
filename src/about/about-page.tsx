@@ -1,3 +1,5 @@
+import { Team } from './team';
+
 type Props = {
   path: string;
 }
@@ -5,9 +7,7 @@ type Props = {
 export const AboutPage = (props: Props) => {
   return (
     <main>
-      <h1>
-        About us
-      </h1>
+      <Team />
     </main>
   );
 };

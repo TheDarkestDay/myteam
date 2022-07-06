@@ -5,6 +5,7 @@ import { AboutPage } from './about/about-page';
 import { ContactPage } from './contact/contact-page';
 import { Header } from './header';
 import { Footer } from './footer';
+import { CallToAction } from './call-to-action';
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
         <AboutPage path="/about" />
         <ContactPage path="/contact" />
       </Router>
+      <CallToAction />
       <Footer />
     </>
   )

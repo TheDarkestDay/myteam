@@ -1,4 +1,4 @@
-import { Button, Frame } from '../common';
+import { Button, Frame } from './common';
 
 export const CallToAction = () => {
   return (

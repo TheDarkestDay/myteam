@@ -16,7 +16,7 @@ export const Testimony = ({author, role, text, avatar}: Props) => {
           <p className="text-secondaryBlue font-bold text-lg">
             {author}
           </p>
-          <p className="text-white text-xs font-italic">
+          <p className="text-white text-xs italic">
             {role}
           </p>
         </figcaption>
