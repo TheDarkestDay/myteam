@@ -4,7 +4,7 @@ import { MemberCard } from './member-card';
 export const Team = () => {
   return (
     <section className="bg-secondaryDeepGreen">
-      <Frame className="py-36">
+      <Frame size="lg">
         <h2 className="text-white font-bold text-5xl text-center mb-16">
           Meet the directors
         </h2>

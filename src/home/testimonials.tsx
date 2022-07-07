@@ -4,7 +4,7 @@ import { Testimony } from './testimony';
 export const Testimonials = () => {
   return (
     <section className="bg-secondaryDeepGreen">
-      <Frame>
+      <Frame size="lg">
         <h2 className="text-white font-bold text-center text-5xl mb-14">
           Delivering real results for top companies. Some of our <span className="text-secondaryBlue">success stories.</span>
         </h2>

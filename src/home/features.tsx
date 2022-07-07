@@ -4,7 +4,7 @@ import { FeatureSection } from './feature-section';
 export const Features = () => {
   return (
     <section className="bg-secondaryDarkDecoration">
-      <Frame className="flex justify-between">
+      <Frame size="lg" className="flex justify-between">
         <h2 className="text-white font-bold text-5xl w-96">
           Build &amp; manage distributed teams like no one else.
         </h2>

@@ -1,3 +1,5 @@
+import { Clients } from './clients';
+import { Intro } from './intro';
 import { Team } from './team';
 
 type Props = {
@@ -7,7 +9,9 @@ type Props = {
 export const AboutPage = (props: Props) => {
   return (
     <main>
+      <Intro />
       <Team />
+      <Clients />
     </main>
   );
 };
