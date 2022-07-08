@@ -2,7 +2,8 @@ import classNames from 'classnames';
 
 type Props = {
   title: string;
-  text: string;
+  titleColor?: 'white' | 'light';
+  text?: string;
   className?: string;
   icon: string;
 };
@@ -16,18 +17,29 @@ const bgIcons: Record<string, string> = {
   analytics: 'after:bg-icon-analytics',
 };
 
-export const FeatureSection = ({title, text, className, icon}: Props) => {
+export const FeatureSection = ({title, text, className, icon, titleColor = 'light'}: Props) => {
   const rootClassName = classNames(ownClassName, iconClassName, bgIcons[icon], className);
+
+  const headingClassName = classNames(
+    titleColor === 'light' ? 'text-primaryLight' : 'text-white', 
+    'font-bold',
+    'text-lg',
+    text && 'mb-4',
+  );
 
   return (
     <section className={rootClassName}>
       <div className="ml-6">
-        <h3 className="text-primaryLight font-bold text-lg mb-4">
+        <h3 className={headingClassName}>
           {title}
         </h3>
-        <p className="text-white">
-          {text}
-        </p>
+        {
+          text && (
+            <p className="text-white">
+              {text}
+            </p>
+          )
+        }
       </div>
     </section>
   );

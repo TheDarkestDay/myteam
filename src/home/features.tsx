@@ -1,5 +1,4 @@
-import { Frame } from '../common';
-import { FeatureSection } from './feature-section';
+import { Frame, FeatureSection } from '../common';
 
 export const Features = () => {
   return (
