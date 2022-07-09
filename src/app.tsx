@@ -1,4 +1,5 @@
 import Router from 'preact-router';
+import { useState } from 'preact/hooks';
 
 import { HomePage } from './home/home-page';
 import { AboutPage } from './about/about-page';
@@ -6,22 +7,28 @@ import { ContactPage } from './contact/contact-page';
 import { Header } from './header';
 import { Footer } from './footer';
 import { CallToAction } from './call-to-action';
-import { useCurrentHref } from './common';
 
 export function App() {
-  const href = useCurrentHref();
+  const [showCallToAction, setShowCallToAction] = useState(true);
 
-  console.log('Href is ', href);
+  const handleRouteChange = () => {
+    const currentHref = window.location.href;
+    const isOnContactPage = currentHref.includes('contact');
+
+    setShowCallToAction(!isOnContactPage);
+  };
 
   return (
     <>
       <Header />
-      <Router>
+      <Router onChange={handleRouteChange}>
         <HomePage path="/" />
         <AboutPage path="/about" />
         <ContactPage path="/contact" />
       </Router>
-      <CallToAction />
+      {
+        showCallToAction && <CallToAction />
+      }
       <Footer />
     </>
   )
