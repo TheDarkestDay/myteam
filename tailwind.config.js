@@ -8,17 +8,17 @@ module.exports = {
     fontFamily: {
       body: ['Livvic', 'system-ui', 'sans-serif'],
     },
-    colors: {
-      white: "#ffffff",
-      primaryDark: "#014e56",
-      primaryLight: "#f67e7e",
-      secondaryDarkText: "#002529",
-      secondaryBlue: "#79c8c7",
-      secondaryDarkDecoration: "#012f34",
-      secondaryDarkBlue: "#2c6269",
-      secondaryDeepGreen: "#004047",
-    },
     extend: {
+      colors:  {
+        white: "#ffffff",
+        primaryDark: "#014e56",
+        primaryLight: "#f67e7e",
+        secondaryDarkText: "#002529",
+        secondaryBlue: "#79c8c7",
+        secondaryDarkDecoration: "#012f34",
+        secondaryDarkBlue: "#2c6269",
+        secondaryDeepGreen: "#004047",
+      },
       padding: {
         frameY: "8vw",
         frameX: "4vw",
