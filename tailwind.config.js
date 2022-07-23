@@ -19,6 +19,9 @@ module.exports = {
         secondaryDarkBlue: "#2c6269",
         secondaryDeepGreen: "#004047",
       },
+      width: {
+        '89.5': '22.375rem',
+      },
       padding: {
         frameY: "8vw",
         frameX: "4vw",
