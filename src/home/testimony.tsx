@@ -3,11 +3,12 @@ type Props = {
   role: string;
   text: string;
   avatar: string;
+  className?: string;
 };
 
-export const Testimony = ({author, role, text, avatar}: Props) => {
+export const Testimony = ({author, role, text, avatar, className}: Props) => {
   return (
-    <div>
+    <div className={className}>
       <figure className="mb-8 text-center">
         <blockquote className="mb-6 text-white bg-icon-tick bg-center bg-no-repeat">
           {text}

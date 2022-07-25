@@ -1,10 +1,14 @@
+import classNames from 'classnames';
 import { Frame, FeatureSection } from '../common';
+
+const topGraphicsClassName = 'before:block lg:before:hidden before:h-[4px] before:bg-primaryLight before:w-12 before:mb-8';
+const frameClassName = 'flex-col flex lg:flex-row justify-between';
 
 export const Features = () => {
   return (
     <section className="bg-secondaryDarkDecoration">
-      <Frame size="lg" className="flex justify-between">
-        <h2 className="text-white font-bold text-5xl w-96">
+      <Frame size="lg" className={classNames(frameClassName, topGraphicsClassName)}>
+        <h2 className="text-white mb-6 lg:mb-0 font-bold text-2xl lg:text-5xl w-96">
           Build &amp; manage distributed teams like no one else.
         </h2>
 

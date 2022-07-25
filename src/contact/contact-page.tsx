@@ -8,13 +8,13 @@ export const ContactPage = (props: Props) => {
   return (
     <main>
       <section className="bg-primaryDark">
-        <Frame className="flex justify-between">
+        <Frame className="flex flex-wrap gap-7 justify-center lg:justify-between">
           <div>
-            <h2 className="text-white font-bold text-6xl mb-4">
+            <h2 className="text-white text-center lg:text-left font-bold text-6xl mb-4">
               Contact
             </h2>
 
-            <p className="mb-12 text-primaryLight font-bold text-3xl">
+            <p className="mb-12 text-center lg:text-left text-primaryLight font-bold text-3xl">
               Ask us about
             </p>
 
@@ -23,7 +23,7 @@ export const ContactPage = (props: Props) => {
             <FeatureSection titleColor="white" title="How we help drive innovation" icon="analytics" />
           </div>
 
-          <form className="w-2/5 shrink">
+          <form className="w-full lg:w-2/5 lg:shrink">
             <div className="mb-6">
               <InputField className="mb-6" name="username" label="Name" />
               <InputField className="mb-6" name="email" label="Email" type="email" />

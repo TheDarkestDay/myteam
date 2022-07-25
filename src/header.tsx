@@ -6,7 +6,7 @@ export const Header = () => {
       <header className="flex">
         <Logo />
 
-        <nav className="flex grow ml-20 items-center gap-10">
+        <nav className="flex grow ml-12 lg:ml-20 items-center gap-10">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
 

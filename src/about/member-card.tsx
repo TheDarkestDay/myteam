@@ -1,13 +1,18 @@
+import classNames from 'classnames';
+
 type Props = {
   name: string;
   role: string;
   quote: string; // TODO: Implemented quote card
   photo: string;
+  className?: string;
 };
 
-export const MemberCard = ({name, role, quote, photo}: Props) => {
+export const MemberCard = ({name, role, quote, className, photo}: Props) => {
+  const rootClassName = classNames('relative bg-secondaryDarkDecoration px-6 py-8 text-center', className);
+
   return (
-    <article className="relative bg-secondaryDarkDecoration px-6 py-8 text-center grow basis-[350px]">
+    <article className={rootClassName}>
       <img src={photo} alt={`Photo of ${name}`} className="mx-auto mb-4" />
       <p className="text-secondaryBlue text-lg">
         {name}

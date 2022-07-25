@@ -8,7 +8,7 @@ type Props = {
   icon: string;
 };
 
-const ownClassName = 'relative flex items-center before:block before:w-14 before:h-14 before:rounded-full before:bg-secondaryDarkBlue';
+const ownClassName = 'relative flex items-center before:block before:shrink-0 before:w-14 before:h-14 before:rounded-full before:bg-secondaryDarkBlue';
 const iconClassName = `after:block after:w-14 after:h-14 after:absolute after:top-0 after:left-0 after:bg-no-repeat after:bg-center`;
 
 const bgIcons: Record<string, string> = {
