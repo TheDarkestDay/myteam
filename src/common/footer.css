@@ -1,0 +1,43 @@
+.footerGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.address {
+  grid-area: address;
+}
+
+.social {
+  grid-area: social;
+}
+
+.copyright {
+  grid-area: copyright;
+}
+
+@media (min-width: 768px) {
+  .footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+     "nav address"
+     "nav address"
+     "social copyright";
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: 1fr 380px 1fr;
+    grid-template-areas:
+     "nav address social"
+     "nav address copyright";
+  }
+}

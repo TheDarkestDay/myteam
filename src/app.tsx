@@ -5,7 +5,7 @@ import { HomePage } from './home/home-page';
 import { AboutPage } from './about/about-page';
 import { ContactPage } from './contact/contact-page';
 import { Header } from './header';
-import { Footer } from './footer';
+import { Footer } from './common/footer';
 import { CallToAction } from './call-to-action';
 
 export function App() {
