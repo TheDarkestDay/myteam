@@ -5,7 +5,7 @@ import classNames from 'classnames';
 type Props = {
   theme?: 'dark' | 'light';
   className?: string;
-  children: ComponentChildren;
+  children?: ComponentChildren;
   href?: string;
 };
 

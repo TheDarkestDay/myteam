@@ -35,7 +35,7 @@ export const FeatureSection = ({title, text, className, icon, titleColor = 'ligh
         </h3>
         {
           text && (
-            <p className="text-white">
+            <p className="text-white text-sm">
               {text}
             </p>
           )

@@ -12,7 +12,7 @@ type Props = {
 const getYGapClassName = (size: FrameSize) => {
   switch (size) {
     case 'lg':
-      return 'py-36';
+      return 'py-16 md:py-24 lg:py-36';
     case 'md':
       return 'py-16';
     default:
@@ -23,7 +23,7 @@ const getYGapClassName = (size: FrameSize) => {
 export const Frame = ({children, className, size = 'md'}: Props) => {
   const rootClassName = classNames(
     getYGapClassName(size),
-    'px-40',
+    'px-6 md:px-10 lg:px-40',
     className
   );
 

@@ -1,12 +1,16 @@
-import { Button, Frame, Logo, Link } from './common';
+import { Button, Frame, Logo, Link, IconButton } from './common';
 
 export const Header = () => {
+  const handleMenuButtonClick = () => {
+
+  };
+
   return (
     <Frame className="bg-primaryDark">
-      <header className="flex">
+      <header className="flex items-center">
         <Logo />
 
-        <nav className="flex grow ml-12 lg:ml-20 items-center gap-10">
+        <nav className="hidden md:flex grow ml-12 lg:ml-20 items-center gap-10">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
 
@@ -14,6 +18,8 @@ export const Header = () => {
             Contact us
           </Button>
         </nav>
+
+        <IconButton onClick={handleMenuButtonClick} iconName="menu" className="md:hidden ml-auto bg-icon-menu" />
       </header>
     </Frame>
   );

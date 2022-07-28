@@ -20,7 +20,7 @@ export const Footer = () => {
         </div>
 
         <div className="address md:place-self-end lg:place-self-auto">
-          <address className="w-48 text-white text-center md:text-right opacity-60">
+          <address className="w-48 text-white text-center md:text-right lg:text-left opacity-60">
             987  Hillcrest Lane <br />
             Irvine, CA
             California 92714

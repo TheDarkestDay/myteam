@@ -8,7 +8,7 @@ export const Features = () => {
   return (
     <section className="bg-secondaryDarkDecoration">
       <Frame size="lg" className={classNames(frameClassName, topGraphicsClassName)}>
-        <h2 className="text-white mb-6 lg:mb-0 font-bold text-2xl lg:text-5xl w-96">
+        <h2 className="text-white mb-6 lg:mb-0 font-bold text-3xl lg:text-5xl w-full lg:w-96">
           Build &amp; manage distributed teams like no one else.
         </h2>
 
