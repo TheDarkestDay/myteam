@@ -25,6 +25,9 @@ module.exports = {
         '1/5-gap-20': 'calc((100% - 20rem) / 5)',
         '1/5-gap-10': 'calc((100% - 10rem) / 5)',
       },
+      maxWidth: {
+        '89.5': '22.375rem',
+      },
       padding: {
         frameY: "8vw",
         frameX: "4vw",

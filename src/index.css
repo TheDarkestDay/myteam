@@ -4,6 +4,7 @@
 
 html, body {
   margin: 0;
+  min-width: 375px;
   box-sizing: border-box;
 }
 
