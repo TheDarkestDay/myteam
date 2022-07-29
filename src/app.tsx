@@ -1,4 +1,4 @@
-import Router from 'preact-router';
+import Router, { useRouter } from 'preact-router';
 import { useState } from 'preact/hooks';
 
 import { HomePage } from './home/home-page';

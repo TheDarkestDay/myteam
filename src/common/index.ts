@@ -5,3 +5,4 @@ export * from './link';
 export * from './feature-section';
 export * from './input-field';
 export * from './icon-button';
+export * from './use-media-query';

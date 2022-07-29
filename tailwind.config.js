@@ -38,6 +38,7 @@ module.exports = {
         'icon-analytics': "url('/src/assets/icon-analytics.svg')",
         'icon-menu': 'url("/src/assets/icon-menu.svg")',
         'icon-tick': "url('/src/assets/icon-tick.svg')",
+        'icon-close': 'url("/src/assets/icon-close.svg")',
         'graphics-intro-bottom': "url('/src/assets/graphics-intro-bottom.svg')",
         'graphics-intro-left': "url('/src/assets/graphics-intro-left.svg')",
         'graphics-cta': "url('/src/assets/graphics-cta.svg')",
