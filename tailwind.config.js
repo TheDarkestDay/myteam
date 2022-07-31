@@ -21,9 +21,13 @@ module.exports = {
       },
       width: {
         '89.5': '22.375rem',
+        '50': '12.5rem',
         '1/3-gap-7': 'calc((100% - 3.5rem) / 3)',
         '1/5-gap-20': 'calc((100% - 20rem) / 5)',
         '1/5-gap-10': 'calc((100% - 10rem) / 5)',
+      },
+      height: {
+        '50': '12.5rem',
       },
       maxWidth: {
         '89.5': '22.375rem',
@@ -42,6 +46,7 @@ module.exports = {
         'graphics-intro-bottom': "url('/src/assets/graphics-intro-bottom.svg')",
         'graphics-intro-left': "url('/src/assets/graphics-intro-left.svg')",
         'graphics-cta': "url('/src/assets/graphics-cta.svg')",
+        'graphics-side-menu': "url('/src/assets/graphics-side-menu.svg')",
       }
     },
   },

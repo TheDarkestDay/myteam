@@ -6,3 +6,4 @@ export * from './feature-section';
 export * from './input-field';
 export * from './icon-button';
 export * from './use-media-query';
+export * from './side-menu';
