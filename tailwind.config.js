@@ -20,6 +20,7 @@ module.exports = {
         secondaryDeepGreen: "#004047",
       },
       width: {
+        '12.5': '3.125rem',
         '89.5': '22.375rem',
         '50': '12.5rem',
         '1/3-gap-7': 'calc((100% - 3.5rem) / 3)',

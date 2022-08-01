@@ -1,14 +1,18 @@
 import classNames from 'classnames';
 import { Frame, FeatureSection } from '../common';
 
-const topGraphicsClassName = 'before:block lg:before:hidden before:h-[4px] before:bg-primaryLight before:w-12 before:mb-8';
+const topGraphicsClassName = 'before:absolute before:h-1 before:bg-primaryLight before:w-12.5 before:-top-6 before:left-0';
 const frameClassName = 'flex-col flex lg:flex-row justify-between';
+const headerClassName = classNames(
+  'relative text-white mb-6 lg:mb-0 font-bold text-3xl lg:text-5xl w-full lg:w-96',
+  topGraphicsClassName,
+);
 
 export const Features = () => {
   return (
     <section className="bg-secondaryDarkDecoration">
-      <Frame size="lg" className={classNames(frameClassName, topGraphicsClassName)}>
-        <h2 className="text-white mb-6 lg:mb-0 font-bold text-3xl lg:text-5xl w-full lg:w-96">
+      <Frame size="lg" className={frameClassName}>
+        <h2 className={headerClassName}>
           Build &amp; manage distributed teams like no one else.
         </h2>
 
