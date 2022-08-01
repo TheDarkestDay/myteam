@@ -27,6 +27,9 @@ module.exports = {
         '1/5-gap-20': 'calc((100% - 20rem) / 5)',
         '1/5-gap-10': 'calc((100% - 10rem) / 5)',
       },
+      flexBasis: {
+        '135': '33.75rem',
+      },
       height: {
         '50': '12.5rem',
       },

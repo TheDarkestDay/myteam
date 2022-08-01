@@ -16,16 +16,16 @@ export const Features = () => {
           Build &amp; manage distributed teams like no one else.
         </h2>
 
-        <div>
+        <div className="lg:basis-135">
           <FeatureSection
-            className="mb-8"
+            className="mb-12 md:mb-8"
             icon="people" 
             title="Experienced Individuals" 
             text="Our network is made up of highly experienced professionals who are passionate about what they do." 
           />
 
           <FeatureSection
-            className="mb-8" 
+            className="mb-12 md:mb-8"
             icon="process"
             title="Easy to Implement" 
             text="Our processes have been refined over years of implementation meaning our teams always deliver." 
