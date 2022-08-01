@@ -32,6 +32,7 @@ module.exports = {
       },
       height: {
         '50': '12.5rem',
+        '61': '15.25rem',
       },
       maxWidth: {
         '89.5': '22.375rem',
@@ -51,6 +52,7 @@ module.exports = {
         'graphics-intro-left': "url('/src/assets/graphics-intro-left.svg')",
         'graphics-cta': "url('/src/assets/graphics-cta.svg')",
         'graphics-side-menu': "url('/src/assets/graphics-side-menu.svg')",
+        'graphics-features': "url('/src/assets/graphics-features.svg')",
       }
     },
   },
