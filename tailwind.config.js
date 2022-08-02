@@ -48,7 +48,7 @@ module.exports = {
         'icon-process': "url('/src/assets/icon-process.svg')",
         'icon-analytics': "url('/src/assets/icon-analytics.svg')",
         'icon-menu': 'url("/src/assets/icon-menu.svg")',
-        'icon-tick': "url('/src/assets/icon-tick.svg')",
+        'icon-quote': "url('/src/assets/icon-quote.svg')",
         'icon-close': 'url("/src/assets/icon-close.svg")',
         'graphics-intro-bottom': "url('/src/assets/graphics-intro-bottom.svg')",
         'graphics-intro-left': "url('/src/assets/graphics-intro-left.svg')",

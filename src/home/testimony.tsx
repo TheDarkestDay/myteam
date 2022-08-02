@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+
 type Props = {
   author: string;
   role: string;
@@ -6,11 +8,23 @@ type Props = {
   className?: string;
 };
 
+const quoteGraphicsClassName = `
+  relative pt-9
+  before:absolute before:w-full before:h-14
+  before:bg-icon-quote before:bg-center before:bg-no-repeat
+  before:top-0
+`;
+
 export const Testimony = ({author, role, text, avatar, className}: Props) => {
+  const rootClassName = classNames(
+    quoteGraphicsClassName,
+    className,
+  );
+
   return (
-    <div className={className}>
-      <figure className="mb-8 text-center">
-        <blockquote className="mb-6 text-white bg-icon-tick bg-center bg-no-repeat">
+    <div className={rootClassName}>
+      <figure className="mb-8 text-center relative z-20">
+        <blockquote className="mb-6 text-white">
           {text}
         </blockquote>
         <figcaption>
