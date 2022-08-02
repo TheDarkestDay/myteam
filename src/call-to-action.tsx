@@ -18,7 +18,7 @@ export const CallToAction = () => {
 
   return (
     <section className={rootClassName}>
-      <Frame size="md" className="bg-primaryLight flex flex-row flex-wrap gap-6 items-center justify-center md:justify-between">
+      <Frame size="md" className="bg-primaryLight flex flex-row flex-wrap gap-6 items-center justify-center sm:py-21 md:py-21 md:justify-between">
         <h2 className="text-3xl lg:text-4xl text-center md:text-left font-bold">
           Ready to get started?
         </h2>

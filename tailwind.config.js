@@ -42,6 +42,7 @@ module.exports = {
       padding: {
         frameY: "8vw",
         frameX: "4vw",
+        '21': '5.25rem',
       },
       backgroundImage: {
         'icon-people': "url('/src/assets/icon-people.svg')",
@@ -55,6 +56,14 @@ module.exports = {
         'graphics-cta': "url('/src/assets/graphics-cta.svg')",
         'graphics-side-menu': "url('/src/assets/graphics-side-menu.svg')",
         'graphics-features': "url('/src/assets/graphics-features.svg')",
+        'graphics-about': "url('/src/assets/graphics-about.svg')",
+        'graphics-clients': "url('/src/assets/graphics-clients.svg')",
+        'graphics-contact-bottom': "url('/src/assets/graphics-contact-bottom.svg')",
+        'graphics-contact-top': "url('/src/assets/graphics-contact-top.svg')",
+        'graphics-members-bottom': "url('/src/assets/graphics-members-bottom.svg')",
+        'graphics-members-top': "url('/src/assets/graphics-members-top.svg')",
+        'graphics-testimonials-bottom': "url('/src/assets/graphics-testimonials-bottom.svg')",
+        'graphics-testimonials-top': "url('/src/assets/graphics-testimonials-top.svg')",
       }
     },
   },
