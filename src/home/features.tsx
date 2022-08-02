@@ -4,15 +4,15 @@ import { Frame, FeatureSection } from '../common';
 const topGraphicsClassName = 'before:absolute before:h-1 before:bg-primaryLight before:w-12.5 before:-top-6 before:left-0';
 const frameClassName = 'flex-col flex lg:flex-row justify-between';
 const headerClassName = classNames(
-  'relative text-white mb-14 md:mb-16 lg:mb-0 font-bold text-3xl lg:text-5xl w-full lg:w-96',
+  'relative text-white mb-14 md:mb-16 lg:mb-0 font-bold text-3xl lg:text-5xl w-60 md:w-111.25 lg:w-96',
   topGraphicsClassName,
 );
 const sectionClassName = `
   bg-secondaryDarkDecoration
   relative
-  after:hidden after:lg:block after:absolute after:right-0 after:translate-x-1/2
+  after:absolute after:right-0
   after:top-0 lg:after:top-auto lg:after:bottom-0 
-  after:w-50 after:h-61 
+  after:w-25 after:h-61 
   after:bg-graphics-features after:bg-no-repeat
 `;
 
