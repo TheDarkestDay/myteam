@@ -18,8 +18,8 @@ export const ContactPage = (props: Props) => {
               Ask us about
             </p>
 
-            <FeatureSection className="mb-2" titleColor="white" title="The quality of our talent network" icon="people" />
-            <FeatureSection className="mb-2" titleColor="white" title="Usage and implementation of our software" icon="process" />
+            <FeatureSection className="mb-12 md:mb-8" titleColor="white" title="The quality of our talent network" icon="people" />
+            <FeatureSection className="mb-12 md:mb-8" titleColor="white" title="Usage and implementation of our software" icon="process" />
             <FeatureSection titleColor="white" title="How we help drive innovation" icon="analytics" />
           </div>
 
