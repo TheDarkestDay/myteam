@@ -1,10 +1,30 @@
+import classNames from 'classnames';
+
 import { Frame } from '../common';
 import { Testimony } from './testimony';
 
 export const Testimonials = () => {
+  const topGraphicsClassName = `
+    before:absolute before:top-0 before:left-0
+    before:bg-graphics-testimonials-top before:bg-no-repeat before:bg-right
+    before:w-34.25 before:h-25
+  `;
+
+  const bottomGraphicsClassName = `
+    after:absolute after:bottom-0 after:right-0
+    after:bg-graphics-testimonials-bottom after:bg-no-repeat
+    after:w-50 after:h-25
+  `;
+
+  const sectionClassName = classNames(
+    'relative bg-secondaryDeepGreen',
+    topGraphicsClassName,
+    bottomGraphicsClassName
+  );
+
   return (
-    <section className="bg-secondaryDeepGreen">
-      <Frame size="lg">
+    <section className={sectionClassName}>
+      <Frame size="lg" className="pt-36 pb-41 md:pt-28">
         <h2 className="text-white font-bold text-center text-2xl lg:text-5xl mb-14">
           Delivering real results for top companies. Some of our <span className="text-secondaryBlue">success stories.</span>
         </h2>

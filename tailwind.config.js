@@ -9,6 +9,11 @@ module.exports = {
       body: ['Livvic', 'system-ui', 'sans-serif'],
     },
     extend: {
+      spacing: {
+        '25': '6.25rem',
+        '35': '8.75rem',
+        '41': '10.25rem',
+      },
       colors:  {
         white: "#ffffff",
         primaryDark: "#014e56",
@@ -23,6 +28,7 @@ module.exports = {
         '12.5': '3.125rem',
         '89.5': '22.375rem',
         '50': '12.5rem',
+        '34.25': '8.5625rem',
         '25': '6.25rem',
         '111.25': '27.8125rem',
         '1/3-gap-7': 'calc((100% - 3.5rem) / 3)',
