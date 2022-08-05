@@ -13,6 +13,7 @@ module.exports = {
         '25': '6.25rem',
         '35': '8.75rem',
         '41': '10.25rem',
+        '27': '6.75rem',
       },
       colors:  {
         white: "#ffffff",
