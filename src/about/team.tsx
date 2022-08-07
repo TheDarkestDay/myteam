@@ -1,10 +1,31 @@
+import classNames from 'classnames';
+
 import { Frame } from '../common';
 import { MemberCard } from './member-card';
 
 export const Team = () => {
+  const topGraphicsClassName = `
+    before:hidden before:md:block
+    before:absolute before:top-0 before:left-0
+    before:w-25 before:h-50
+    before:bg-graphics-members-top before:bg-no-repeat before:bg-left
+  `;
+
+  const bottomGraphicsClassName = `
+    after:absolute after:bottom-0 after:right-0
+    after:w-34.25 after:h-25
+    after:bg-graphics-members-bottom after:bg-no-repeat after:bg-left
+  `;
+
+  const rootClassName = classNames(
+    'relative bg-secondaryDeepGreen',
+    topGraphicsClassName,
+    bottomGraphicsClassName
+  );
+
   return (
-    <section className="bg-secondaryDeepGreen">
-      <Frame size="lg">
+    <section className={rootClassName}>
+      <Frame size="lg" className="pb-32 md:pb-28">
         <h2 className="text-white font-bold text-5xl text-center mb-16">
           Meet the directors
         </h2>
