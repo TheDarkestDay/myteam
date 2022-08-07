@@ -1,9 +1,22 @@
+import classNames from 'classnames';
+
 import { Frame } from '../common';
 
 export const Clients = () => {
+  const graphicsClassName = `
+    before:absolute before:top-0 before:left-0
+    before:bg-graphics-clients before:bg-no-repeat before:bg-right-bottom md:before:bg-bottom
+    before:w-25 md:before:w-50 before:h-25 lg:before:h-50
+  `;
+
+  const rootClassName = classNames(
+    'relative bg-secondaryDarkDecoration',
+    graphicsClassName
+  );
+
   return (
-    <section className="bg-secondaryDarkDecoration">
-      <Frame size="lg">
+    <section className={rootClassName}>
+      <Frame size="lg" className="pt-22">
         <h2 className="text-white text-center text-5xl font-bold mb-16">
           Some of our clients
         </h2>
