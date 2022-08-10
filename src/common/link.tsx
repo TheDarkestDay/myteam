@@ -1,5 +1,5 @@
 import { ComponentChildren } from 'preact';
-import { Link as PreactLink } from 'preact-router/match';
+import { Link as ReactRouterLink } from 'react-router-dom';
 import classNames from 'classnames';
 
 type Props = {
@@ -13,8 +13,8 @@ export const Link = ({children, className, href}: Props) => {
   const resultClassName = classNames(ownClassName, className);
 
   return (
-    <PreactLink className={resultClassName} href={href}>
+    <ReactRouterLink className={resultClassName} to={href}>
       {children}
-    </PreactLink>
+    </ReactRouterLink>
   );
 };

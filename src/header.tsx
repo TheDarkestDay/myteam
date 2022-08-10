@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'preact/hooks';
+import { useLocation } from 'react-router-dom';
 
 import { Button, Frame, Logo, Link, IconButton, useMediaQuery, SideMenu } from './common';
-import { useRouter } from 'preact-router';
 
 export const Header = () => {
-  const [routeUpdate] = useRouter();
+  const {pathname} = useLocation();
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   const isTablet = useMediaQuery('(min-width: 768px)');
 
   useEffect(() => {
     setIsSideMenuOpen(false);
-  }, [routeUpdate.path, setIsSideMenuOpen]);
+  }, [pathname, setIsSideMenuOpen]);
 
   useEffect(() => {
     if (isTablet) {
@@ -32,10 +32,10 @@ export const Header = () => {
         <Logo />
 
         <nav className="hidden md:flex grow ml-12 lg:ml-20 items-center gap-10">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
+          <Link href="">Home</Link>
+          <Link href="about">About</Link>
 
-          <Button className="ml-auto" href="/contact">
+          <Button className="ml-auto" href="contact">
             Contact us
           </Button>
         </nav>

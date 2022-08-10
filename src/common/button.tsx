@@ -1,5 +1,5 @@
 import { ComponentChildren } from 'preact';
-import { Link } from 'preact-router/match';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 type Props = {
@@ -42,7 +42,7 @@ export const Button = ({className, children, href, theme = 'dark'}: Props) => {
   );
 
   if (href != null) {
-    return <Link className={resultClassName} href={href}>{children}</Link>;
+    return <Link className={resultClassName} to={href}>{children}</Link>;
   }
 
   return <button className={resultClassName}>{children}</button>;

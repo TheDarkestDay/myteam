@@ -2,11 +2,7 @@ import classNames from 'classnames';
 
 import { Button, FeatureSection, Frame, InputField } from '../common';
 
-type Props = {
-  path: string;
-}
-
-export const ContactPage = (props: Props) => {
+export const ContactPage = () => {
   const topGraphicsClassName = `
     before:hidden md:before:block
     before:absolute before:top-0 before:left-0

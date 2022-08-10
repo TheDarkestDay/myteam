@@ -2,11 +2,7 @@ import { Intro } from './intro';
 import { Features } from './features';
 import { Testimonials } from './testimonials';
 
-type Props = {
-  path: string;
-}
-
-export const HomePage = (_props: Props) => {
+export const HomePage = () => {
   return (
     <main>
       <Intro />
