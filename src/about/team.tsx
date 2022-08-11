@@ -1,5 +1,11 @@
 import classNames from 'classnames';
 
+import nMarksPhotoUrl from "../assets/nmarks-photo.png";
+import cDuncanPhotoUrl from "../assets/cduncan-photo.png"
+import cHamerPhotoUrl from "../assets/chamer-photo.png";
+import dHeatonPhotoUrl from "../assets/dheaton-photo.png";
+import gWisePhotoUrl from "../assets/gwise-photo.png";
+import aAllanPhotoUrl from "../assets/aallan-photo.png";
 import { Frame } from '../common';
 import { MemberCard } from './member-card';
 
@@ -33,12 +39,12 @@ export const Team = () => {
         </h2>
 
         <div className="flex flex-wrap gap-x-8 gap-y-12">
-          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Nikita Marks" role="Founder and CEO" photo="/src/assets/nmarks-photo.png" quote={dummyQuote} />
-          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Christian Duncan" role="Co-founder and COO" photo="/src/assets/cduncan-photo.png" quote={dummyQuote} />
-          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Cruz Hamer" role="Co-founder and CTO" photo="/src/assets/chamer-photo.png" quote={dummyQuote} />
-          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Drake Heaton" role="Business development lead" photo="/src/assets/dheaton-photo.png" quote={dummyQuote} />
-          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Griffin Wise" role="Lead Marketing" photo="/src/assets/gwise-photo.png" quote={dummyQuote} />
-          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Aden Allan" role="Head of talent" photo="/src/assets/aallan-photo.png" quote={dummyQuote} />
+          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Nikita Marks" role="Founder and CEO" photo={nMarksPhotoUrl} quote={dummyQuote} />
+          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Christian Duncan" role="Co-founder and COO" photo={cDuncanPhotoUrl} quote={dummyQuote} />
+          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Cruz Hamer" role="Co-founder and CTO" photo={cHamerPhotoUrl} quote={dummyQuote} />
+          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Drake Heaton" role="Business development lead" photo={dHeatonPhotoUrl} quote={dummyQuote} />
+          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Griffin Wise" role="Lead Marketing" photo={gWisePhotoUrl} quote={dummyQuote} />
+          <MemberCard className="grow w-full md:w-1/2-gap-8 lg:w-1/3-gap-8" name="Aden Allan" role="Head of talent" photo={aAllanPhotoUrl} quote={dummyQuote} />
         </div>
       </Frame>
     </section>
