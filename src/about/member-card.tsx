@@ -1,6 +1,8 @@
 import classNames from "classnames";
 import { useState } from "preact/hooks";
 
+import twitterLogoUrl from '../assets/twitter-logo.svg';
+import linkedInLogoUrl from '../assets/linkedin-logo.svg';
 import { Link } from "../common";
 
 type Props = {
@@ -55,13 +57,13 @@ export const MemberCard = ({ name, role, quote, className, photo }: Props) => {
           <nav className="flex justify-center gap-4">
             <Link href="#">
               <img
-                src="/src/assets/twitter-logo.svg"
+                src={twitterLogoUrl}
                 alt={`Twitter of ${name}`}
               />
             </Link>
             <Link href="#">
               <img
-                src="/src/assets/linkedin-logo.svg"
+                src={linkedInLogoUrl}
                 alt={`LinkedIn profile of ${name}`}
               />
             </Link>

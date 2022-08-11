@@ -1,5 +1,10 @@
 import classNames from 'classnames';
 
+import theVergeLogoUrl from '../assets/the-verge-logo.svg';
+import jakartaPostLogUrl from '../assets/jakarta-post-logo.svg';
+import theGuardianLogoUrl from '../assets/the-guardian-logo.svg';
+import techRadarLogoUrl from '../assets/techradar-logo.svg';
+import gadgetsNowLogoUrl from '../assets/gadgets-now-logo.svg';
 import { Frame } from '../common';
 
 export const Clients = () => {
@@ -23,19 +28,19 @@ export const Clients = () => {
 
         <div className="flex gap-10 flex-wrap flex-row items-center">
           <div className="w-full md:w-1/5-gap-10 min-w-max grow-1">
-            <img className="mx-auto" width="165" height="28" src="/src/assets/the-verge-logo.svg" alt="The Verge logo" />
+            <img className="mx-auto" width="165" height="28" src={theVergeLogoUrl} alt="The Verge logo" />
           </div>
           <div className="w-full md:w-1/5-gap-10 min-w-max grow-1">
-            <img className="mx-auto" width="184" height="23" src="/src/assets/jakarta-post-logo.svg" alt="Jakarta Post logo" />
+            <img className="mx-auto" width="184" height="23" src={jakartaPostLogUrl} alt="Jakarta Post logo" />
           </div>
           <div className="w-full md:w-1/5-gap-10 min-w-max grow-1">
-            <img className="mx-auto" width="180" height="28" src="/src/assets/the-guardian-logo.svg" alt="The Guardian logo" />
+            <img className="mx-auto" width="180" height="28" src={theGuardianLogoUrl} alt="The Guardian logo" />
           </div>
           <div className="w-full md:w-1/5-gap-10 min-w-max grow-1">
-            <img className="mx-auto" width="165" height="28" src="/src/assets/techradar-logo.svg" alt="Techradar logo" />
+            <img className="mx-auto" width="165" height="28" src={techRadarLogoUrl} alt="Techradar logo" />
           </div>
           <div className="w-full md:w-1/5-gap-10 min-w-max grow-1">
-            <img className="mx-auto" width="98" height="45" src="/src/assets/gadgets-now-logo.svg" alt="Gadgets Now logo" />
+            <img className="mx-auto" width="98" height="45" src={gadgetsNowLogoUrl} alt="Gadgets Now logo" />
           </div>
         </div>
       </Frame>

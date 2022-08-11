@@ -1,5 +1,8 @@
 import { Frame, Logo, Link } from '.';
 
+import twitterLogoUrl from '../assets/twitter-logo.svg';
+import facebookLogoUrl from '../assets/facebook-logo.svg';
+import pinterestLogoUrl from '../assets/pinterest-logo.svg';
 import './footer.css';
 
 export const Footer = () => {
@@ -31,13 +34,13 @@ export const Footer = () => {
         <div className="social lg:place-self-end">
           <nav className="flex gap-4">
             <Link href="#">
-              <img src="/src/assets/facebook-logo.svg" alt="Visit our Facebook page" />
+              <img src={facebookLogoUrl} alt="Visit our Facebook page" />
             </Link>
             <Link href="#">
-              <img src="/src/assets/pinterest-logo.svg" alt="Visit our Pinterest page" />
+              <img src={pinterestLogoUrl} alt="Visit our Pinterest page" />
             </Link>
             <Link href="#">
-              <img src="/src/assets/twitter-logo.svg" alt="Visit our Twitter page" />
+              <img src={twitterLogoUrl} alt="Visit our Twitter page" />
             </Link>
           </nav>
         </div>
