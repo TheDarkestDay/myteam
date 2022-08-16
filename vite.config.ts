@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/myteam/',
   plugins: [
     VitePWA({
-      includeAssets: ['src/assets/pwa-icons/favicon.ico', 'src/assets/pwa-icons/apple-touch-icon.png', 'src/assets/pwa-icons/mask-icon.svg'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
 
       manifest: {
         name: 'Myteam landing page',
@@ -16,17 +16,17 @@ export default defineConfig({
         theme_color: '#014e56',
         icons: [
           {
-            src: 'assets/pwa-192x192.png',
+            src: 'pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'assets/pwa-512x512.png',
+            src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           },
           {
-            src: 'assets/pwa-512x512.png',
+            src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable'
