@@ -1,8 +1,8 @@
 import { ComponentChildren } from 'preact';
-import { useState, useEffect, useCallback } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
 import classNames from 'classnames';
 
-type SlideDirection = 'left' | 'top';
+type SlideDirection = 'left' | 'up';
 
 type Props = {
   className?: string;
