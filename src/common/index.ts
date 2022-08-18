@@ -7,3 +7,4 @@ export * from './input-field';
 export * from './icon-button';
 export * from './use-media-query';
 export * from './side-menu';
+export * from './slide-panel';
