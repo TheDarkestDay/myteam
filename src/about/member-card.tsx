@@ -37,7 +37,7 @@ export const MemberCard = ({ name, role, quote, className, photo }: Props) => {
   return (
     <article className={rootClassName}>
       <div className="relative overflow-y-hidden">
-        <img src={photo} alt={`Photo of ${name}`} className="mx-auto mb-4" />
+        <img width="100" height="100" src={photo} alt={`Photo of ${name}`} className="mx-auto mb-4" />
         <p className="text-secondaryBlue font-bold text-lg">{name}</p>
         <p className="text-white text-sm italic mb-7">{role}</p>
 
@@ -53,15 +53,17 @@ export const MemberCard = ({ name, role, quote, className, photo }: Props) => {
               </blockquote>
             </figure>
 
-            <nav className="flex justify-center gap-4">
+            <nav className="flex justify-center items-center gap-4">
               <Link href="#">
                 <img
+                  width="24" height="24"
                   src={twitterLogoUrl}
                   alt={`Twitter of ${name}`}
                 />
               </Link>
               <Link href="#">
                 <img
+                  width="24" height="24"
                   src={linkedInLogoUrl}
                   alt={`LinkedIn profile of ${name}`}
                 />

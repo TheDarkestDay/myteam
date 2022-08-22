@@ -32,15 +32,15 @@ export const Footer = () => {
         </div>
 
         <div className="social lg:place-self-end">
-          <nav className="flex gap-4">
+          <nav className="flex items-center gap-4">
             <Link href="#">
-              <img src={facebookLogoUrl} alt="Visit our Facebook page" />
+              <img width="24" height="24" src={facebookLogoUrl} alt="Visit our Facebook page" />
             </Link>
             <Link href="#">
-              <img src={pinterestLogoUrl} alt="Visit our Pinterest page" />
+              <img width="24" height="24" src={pinterestLogoUrl} alt="Visit our Pinterest page" />
             </Link>
             <Link href="#">
-              <img src={twitterLogoUrl} alt="Visit our Twitter page" />
+              <img width="24" height="24" src={twitterLogoUrl} alt="Visit our Twitter page" />
             </Link>
           </nav>
         </div>

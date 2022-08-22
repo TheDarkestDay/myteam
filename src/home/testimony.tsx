@@ -37,7 +37,7 @@ export const Testimony = ({author, role, text, avatar, className}: Props) => {
         </figcaption>
       </figure>
 
-      <img className="mx-auto" src={avatar} alt={`Photo of ${author}`} />
+      <img width="66" height="66" className="mx-auto" src={avatar} alt={`Photo of ${author}`} />
     </div>
   );
 };
