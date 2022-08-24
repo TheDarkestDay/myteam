@@ -1,7 +1,7 @@
 import classNames from 'classnames';
-import { useCallback, useEffect, useRef } from 'preact/hooks';
+import { useCallback, useEffect } from 'preact/hooks';
 
-import { Link, LinkRef } from './link';
+import { Link } from './link';
 import { Button } from './button';
 import { IconButton } from './icon-button';
 import { SlidePanel } from './slide-panel';
@@ -32,12 +32,6 @@ export const SideMenu = ({open, onClose}: Props) => {
 
   const backdropClassName = 'fixed top-0 left-0 h-screen w-screen z-10 bg-secondaryDarkDecoration opacity-50';
 
-  const handleLinkRendered = (linkRef: LinkRef | null) => {
-    if (open) {
-      linkRef?.focus();
-    }
-  };
-
   const handleNavRendered = useCallback((element: HTMLElement | null) => {
     setRootElement(element);
   }, [setRootElement]);
@@ -52,7 +46,7 @@ export const SideMenu = ({open, onClose}: Props) => {
           </div>
 
           <div className="flex flex-col gap-6 mb-9">
-            <Link ref={handleLinkRendered} href="/">Home</Link>
+            <Link href="/">Home</Link>
             <Link href="/about">About</Link>
           </div>
 
