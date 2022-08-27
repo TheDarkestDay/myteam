@@ -8,4 +8,4 @@ export * from './icon-button';
 export * from './use-media-query';
 export * from './side-menu';
 export * from './slide-panel';
-export * from './use-focus-trap';
+export * from './focus-trap';
