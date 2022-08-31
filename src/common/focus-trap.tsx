@@ -1,8 +1,9 @@
 import { ComponentChildren } from 'preact';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { MutableRef, useEffect, useRef, useState } from 'preact/hooks';
 
 type Props = {
   children: ComponentChildren
+  initialFocusTo?: MutableRef<HTMLElement | null>;
   className?: string;
 };
 
@@ -10,7 +11,7 @@ type KeyboardNavigationDirection = 'forward' | 'backward';
 
 const FOCUSABLE_ELEMENTS_SELECTOR = 'a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"]';
 
-export const FocusTrap = ({children, className}: Props) => {
+export const FocusTrap = ({children, className, initialFocusTo}: Props) => {
   const [keyboardNavigationDirection, setKeyboardNavigationDirection] = useState<KeyboardNavigationDirection>('forward');
   const [elementFocusedBeforeTrap, setElementFocusedBeforeTrap] = useState<HTMLElement | null>(null);
   const rootRef = useRef<HTMLDivElement | null>(null);
@@ -23,9 +24,9 @@ export const FocusTrap = ({children, className}: Props) => {
 
     setElementFocusedBeforeTrap(document.activeElement as HTMLElement);
 
-    const [ head ] = [...rootElement.querySelectorAll(FOCUSABLE_ELEMENTS_SELECTOR)] as Array<HTMLElement>;
-
-    head.focus();
+    if (initialFocusTo) {
+      initialFocusTo.current?.focus();
+    }
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Tab') {

@@ -7,6 +7,7 @@ import { MutableRef, useRef } from 'preact/hooks';
 type Props = {
   className?: string;
   href?: string;
+  role?: string;
   children: ComponentChildren;
 };
 
@@ -14,7 +15,7 @@ export type LinkRef = {
   focus(): void;
 };
 
-const _Link = ({children, className, href}: Props, ref: MutableRef<LinkRef | null>) => {
+const _Link = ({children, role, className, href}: Props, ref: MutableRef<LinkRef | null>) => {
   const ownRef = useRef<HTMLAnchorElement | null>();
 
   useImperativeHandle(ref, () => ({
@@ -27,7 +28,7 @@ const _Link = ({children, className, href}: Props, ref: MutableRef<LinkRef | nul
   const resultClassName = classNames(ownClassName, className);
 
   return (
-    <ReactRouterLink ref={ownRef} className={resultClassName} to={href}>
+    <ReactRouterLink role={role} ref={ownRef} className={resultClassName} to={href}>
       {children}
     </ReactRouterLink>
   );

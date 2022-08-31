@@ -5,6 +5,7 @@ import classNames from 'classnames';
 type Props = {
   theme?: 'dark' | 'light';
   className?: string;
+  role?: string;
   children?: ComponentChildren;
   href?: string;
 };
@@ -35,15 +36,15 @@ const lightClassName = classNames(
   'hover:text-white'
 );
 
-export const Button = ({className, children, href, theme = 'dark'}: Props) => {
+export const Button = ({className, role, children, href, theme = 'dark'}: Props) => {
   const resultClassName = classNames(
     theme === 'dark' ? darkClassName : lightClassName,
     className
   );
 
   if (href != null) {
-    return <Link className={resultClassName} to={href}>{children}</Link>;
+    return <Link role={role} className={resultClassName} to={href}>{children}</Link>;
   }
 
-  return <button className={resultClassName}>{children}</button>;
+  return <button role={role} className={resultClassName}>{children}</button>;
 };

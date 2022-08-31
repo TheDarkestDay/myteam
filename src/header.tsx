@@ -40,7 +40,7 @@ export const Header = () => {
           </Button>
         </nav>
 
-        <IconButton ariaLabel="Open menu" onClick={handleMenuButtonClick} iconName="menu" className="md:hidden ml-auto bg-icon-menu" />
+        <IconButton ariaExpanded={isSideMenuOpen} ariaHaspopup="menu" ariaLabel="Open menu" onClick={handleMenuButtonClick} iconName="menu" className="md:hidden ml-auto bg-icon-menu" />
       </header>
 
       <SideMenu open={isSideMenuOpen} onClose={handleCloseMenuButtonClick} />
