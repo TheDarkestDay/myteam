@@ -1,11 +1,12 @@
 import { ComponentChildren } from 'preact';
-import { useState, useEffect } from 'preact/hooks';
+import { useState, useEffect, useRef, MutableRef } from 'preact/hooks';
 import classNames from 'classnames';
 
 type SlideDirection = 'left' | 'up';
 
 type Props = {
   className?: string;
+  focusOnRender?: MutableRef<HTMLElement | null>;
   children: ComponentChildren;
   direction: SlideDirection;
   open: boolean;
@@ -19,7 +20,7 @@ const getSlideOutTransform = (direction: SlideDirection) => {
   return direction === 'left' ? 'translate-x-full' : 'translate-y-full';
 };
 
-export const SlidePanel = ({ children, className, open, direction}: Props) => {
+export const SlidePanel = ({ children, className, open, direction, focusOnRender}: Props) => {
   const [isSlideIn, setIsSlideIn] = useState(false);
   const [shouldMount, setShouldMount] = useState(false);
 
@@ -48,6 +49,8 @@ export const SlidePanel = ({ children, className, open, direction}: Props) => {
   const handleTransitionEnd = () => {
     if (!open) {
       setShouldMount(false);
+    } else if (focusOnRender && focusOnRender.current != null) {
+      focusOnRender.current.focus();
     }
   };
 
@@ -56,7 +59,7 @@ export const SlidePanel = ({ children, className, open, direction}: Props) => {
   }
 
   return (
-    <div ref={onPanelRendered} onTransitionEnd={handleTransitionEnd} className={rootClassName}>
+    <div ref={onPanelRendered} onTransitionEnd={handleTransitionEnd} className={rootClassName} tabIndex={-1}>
       {children}
     </div>
   );
