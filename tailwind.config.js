@@ -10,11 +10,12 @@ module.exports = {
     },
     extend: {
       spacing: {
+        '22': '5.5rem',
         '25': '6.25rem',
+        '27': '6.75rem',
         '35': '8.75rem',
         '41': '10.25rem',
-        '27': '6.75rem',
-        '22': '5.5rem'
+        '65': '16.25rem',
       },
       colors:  {
         white: "#ffffff",
@@ -44,6 +45,8 @@ module.exports = {
       },
       height: {
         '25': '6.25rem',
+        '29': '7.25rem',
+        '30': '7.5rem',
         '50': '12.5rem',
         '61': '15.25rem',
       },
