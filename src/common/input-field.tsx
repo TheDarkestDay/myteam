@@ -1,10 +1,18 @@
 import classNames from 'classnames';
 import { useRef, useState } from 'preact/hooks';
+import { SingleLineInputField } from './single-line-input-field';
+import { MultiLineInputField } from './multi-line-input-field';
+
+export type InputFieldImplRef = {
+  getValue(): string;
+  getValidity(): ValidityState;
+};
 
 type Props = {
   name: string;
   className?: string;
   label: string;
+  multiline?: boolean;
   type?: string;
 };
 
@@ -14,7 +22,7 @@ type State = {
   validityState: ValidityState | null,
 };
 
-export const InputField = ({name, label, type = 'text', className}: Props) => {
+export const InputField = ({name, label, type = 'text', multiline = false, className}: Props) => {
   const [state, setState] = useState<State>({
     shouldElevateLabel: false,
     isInvalid: false,
@@ -23,7 +31,7 @@ export const InputField = ({name, label, type = 'text', className}: Props) => {
 
   const { shouldElevateLabel, isInvalid, validityState } = state;
 
-  const fieldRef = useRef<HTMLInputElement | null>(null);
+  const fieldRef = useRef<InputFieldImplRef | null>(null);
 
   const rootClassName = classNames(
     'relative',
@@ -37,7 +45,7 @@ export const InputField = ({name, label, type = 'text', className}: Props) => {
   const handleFieldBlur = () => {
     const field = fieldRef.current;
 
-    if (field && field.value === '') {
+    if (field && field.getValue() === '') {
       setState((oldState) => ({...oldState, shouldElevateLabel: false}));
     }
   };
@@ -49,7 +57,7 @@ export const InputField = ({name, label, type = 'text', className}: Props) => {
   };
 
   const handleInvalid = () => {
-    setState((oldState) => ({...oldState, isInvalid: true, validityState: fieldRef.current!.validity}));
+    setState((oldState) => ({...oldState, isInvalid: true, validityState: fieldRef.current!.getValidity()}));
   };
 
   const labelClassName = classNames(
@@ -58,26 +66,34 @@ export const InputField = ({name, label, type = 'text', className}: Props) => {
     isInvalid && 'text-primaryLight'
   );
 
-  const inputClassName = classNames(
-    'w-full bg-transparent border-b border-white text-white',
-    isInvalid && 'border-primaryLight'
-  );
-
   return (
     <p className={rootClassName}>
       <label className={labelClassName} htmlFor={name}>
         {label}
       </label>
 
-      <input ref={fieldRef} 
-        className={inputClassName} 
-        onFocus={handleFieldFocus}
-        onBlur={handleFieldBlur}
-        onInvalid={handleInvalid}
-        onChange={handleChange}
-        id={name} 
-        name={name} 
-        type={type} />
+      {
+        multiline
+        ? <MultiLineInputField
+            ref={fieldRef}
+            onFocus={handleFieldFocus}
+            onBlur={handleFieldBlur}
+            onInvalid={handleInvalid}
+            onChange={handleChange}
+            id={name} 
+            name={name} 
+            isInvalid={isInvalid} />
+        : <SingleLineInputField
+            ref={fieldRef}
+            onFocus={handleFieldFocus}
+            onBlur={handleFieldBlur}
+            onInvalid={handleInvalid}
+            onChange={handleChange}
+            id={name} 
+            name={name} 
+            isInvalid={isInvalid} 
+            type={type} />
+      }
       
       {
         isInvalid && 

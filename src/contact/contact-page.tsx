@@ -47,7 +47,7 @@ export const ContactPage = () => {
               <InputField className="mb-6" name="email" label="Email" type="email" />
               <InputField className="mb-6" name="companyName" label="Company Name" />
               <InputField className="mb-6" name="title" label="Title" />
-              <InputField className="mb-6" name="message" label="Message" />
+              <InputField className="mb-6" name="message" label="Message" multiline />
             </div>
             <Button>
               Submit
