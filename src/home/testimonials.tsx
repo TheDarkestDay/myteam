@@ -32,7 +32,7 @@ export const Testimonials = () => {
           Delivering real results for top companies. Some of our <span className="text-secondaryBlue">success stories.</span>
         </h2>
 
-        <div className="flex flex-wrap gap-7">
+        <div className="flex items-center flex-wrap gap-7">
           <Testimony
             className="w-full lg:w-1/3-gap-7" 
             text="“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”" 
