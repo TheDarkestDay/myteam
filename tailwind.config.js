@@ -17,6 +17,9 @@ module.exports = {
         '41': '10.25rem',
         '65': '16.25rem',
       },
+      gridTemplateColumns: {
+        'clientsGrid': 'repeat(auto-fit, minmax(180px, 1fr))'
+      },
       colors:  {
         white: "#ffffff",
         primaryDark: "#014e56",

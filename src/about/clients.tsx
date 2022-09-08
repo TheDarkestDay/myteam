@@ -26,22 +26,12 @@ export const Clients = () => {
           Some of our clients
         </h2>
 
-        <div className="flex gap-10 flex-wrap flex-row items-center">
-          <div className="w-full md:w-1/5-gap-10 min-w-max grow-1">
-            <img className="mx-auto" width="165" height="28" src={theVergeLogoUrl} alt="The Verge logo" />
-          </div>
-          <div className="w-full md:w-1/5-gap-10 min-w-max grow-1">
-            <img className="mx-auto" width="184" height="23" src={jakartaPostLogUrl} alt="Jakarta Post logo" />
-          </div>
-          <div className="w-full md:w-1/5-gap-10 min-w-max grow-1">
-            <img className="mx-auto" width="180" height="28" src={theGuardianLogoUrl} alt="The Guardian logo" />
-          </div>
-          <div className="w-full md:w-1/5-gap-10 min-w-max grow-1">
-            <img className="mx-auto" width="165" height="28" src={techRadarLogoUrl} alt="Techradar logo" />
-          </div>
-          <div className="w-full md:w-1/5-gap-10 min-w-max grow-1">
-            <img className="mx-auto" width="98" height="45" src={gadgetsNowLogoUrl} alt="Gadgets Now logo" />
-          </div>
+        <div className="grid justify-items-center md:justify-items-stretch grid-cols-clientsGrid items-center gap-10">
+          <img width="165" height="28" src={theVergeLogoUrl} alt="The Verge logo" />
+          <img width="184" height="23" src={jakartaPostLogUrl} alt="Jakarta Post logo" />
+          <img width="180" height="28" src={theGuardianLogoUrl} alt="The Guardian logo" />
+          <img width="165" height="28" src={techRadarLogoUrl} alt="Techradar logo" />
+          <img width="98" height="45" src={gadgetsNowLogoUrl} alt="Gadgets Now logo" />
         </div>
       </Frame>
     </section>
